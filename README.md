@@ -1,68 +1,34 @@
-﻿# Registro de Notas de Estudiantes
+﻿# ðŸ“ Registro de Notas de Estudiantes
 
 Sistema de registro y consulta de notas de estudiantes con persistencia.
 
-## Detalle
+## ðŸ“‹ CaracterÃ­sticas
 
-| | |
-|---|---|
-| Tipo | Consola (MVC) |
-| Archivos Java | 10 |
-| Version de Java | 21 |
-| Patron | Arquitectura MVC con patron DAO |
+- Registro de notas de estudiantes
+- Consulta de notas y rendimiento acadÃ©mico
+- Persistencia de datos
+- Interfaz por consola
+- Arquitectura MVC
 
-## Funcionalidades
+## ðŸ› ï¸ TecnologÃ­as
 
-- Registro de estudiantes
-- Calculo de notas
-- Persistencia DAO en archivo plano
-- DataMapper entidad-DTO
-- Integracion con plataforma academica
+- Java
+- Maven
+- PatrÃ³n MVC
 
-## Estructura del proyecto
-
-```
-universidadNotas/
-|-- pom.xml       configuracion de Maven, importable desde cualquier IDE
-|-- src/          codigo fuente
-`-- README.md
-```
-
-## Como ejecutarlo
-
-### Con Maven
+## ðŸš€ CÃ³mo ejecutar
 
 ```bash
+git clone https://github.com/P2X4A/universidadNotas.git
+cd universidadNotas
 mvn clean compile
-mvn exec:java
+mvn exec:java -Dexec.mainClass="AplMain"
 ```
 
-### Con javac directamente
+## ðŸ‘¨â€ðŸ’» Autor
 
-```bash
-# Linux / macOS
-javac -d bin $(find src -name "*.java")
+Sergio Parra
 
-# Windows (PowerShell)
-javac -d bin (Get-ChildItem -Recurse -Filter *.java src).FullName
-```
+---
 
-```bash
-java -cp bin co.edu.unbosque.controller.AplMain
-```
-
-### Desde un IDE
-
-Cualquier IDE con soporte de Java (Eclipse, IntelliJ IDEA, VS Code o NetBeans)
-puede importar el proyecto directamente como **proyecto Maven**. Basta con abrir
-o importar la carpeta: el IDE detecta el `pom.xml`, resuelve las dependencias y
-compila sin configuracion adicional.
-
-## Autor
-
-Desarrollado por [Sergio Parra](https://github.com/P2X4A) como parte de su
-formacion en Java.
-
-## Licencia
-
-Ver el archivo [LICENSE](LICENSE).
+*Proyecto acadÃ©mico para portafolio.*
